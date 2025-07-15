@@ -1,0 +1,52 @@
+.forfaits-static {
+  padding: 40px 20px;
+  background-color: #f5f9ff;
+
+  .titre {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2f9ffb;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+
+  .grille-forfaits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .carte-forfaits {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(47, 159, 251, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(47, 159, 251, 0.3);
+    }
+
+    h3 {
+      color: #2f9ffb;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .prix {
+      margin-top: 15px;
+      font-weight: 700;
+      color: #0077ff;
+      font-size: 1.2rem;
+    }
+  }
+}

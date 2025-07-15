@@ -1,0 +1,109 @@
+.paiement-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.paiement-container {
+  max-width: 500px;
+  margin: 80px auto 40px auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+
+  h2.titre {
+    font-size: 26px;
+    font-weight: 600;
+    color: #2f9ffb;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid #2f9ffb;
+    padding-bottom: 10px;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      padding: 12px 100px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      outline: none;
+      transition: border 0.3s ease;
+
+      &:focus {
+        border-color: #2f9ffb;
+      }
+
+      &:read-only {
+        background-color: #f0f0f0;
+        color: #555;
+        font-weight: bold;
+      }
+    }
+
+    button {
+      padding: 14px;
+      background-color: #2f9ffb;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #187cd3;
+      }
+    }
+  }
+}
+
+.toast-success {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #4caf50;
+  color: white;
+  padding: 16px 22px;
+  border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.5s ease-in-out;
+  z-index: 999;
+  font-weight: 500;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .paiement-container {
+    margin: 40px 20px;
+    padding: 30px 20px;
+  }
+
+  .paiement-container h2.titre {
+    font-size: 22px;
+  }
+
+  .paiement-container form input,
+  .paiement-container form button {
+    font-size: 14px;
+  }
+}

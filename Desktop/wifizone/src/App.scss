@@ -1,0 +1,27 @@
+.app{
+    .conteneur-forfaits{
+        background-color: white;
+        margin-top: 40px;
+        //margin-bottom: 95px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0px;
+        height: 100vh;
+        min-height: 100vh;
+        
+
+        .forfaits{
+            max-width: 1366px;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+    }
+
+    .conteneur-footer{
+        margin-bottom: 0px;
+    }
+
+}
